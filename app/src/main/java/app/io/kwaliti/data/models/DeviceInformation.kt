@@ -8,7 +8,8 @@ import app.io.kwaliti.utils.Constants.DATABASE_TABLE
 data class DeviceInformation(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
+    val serialNumber: String,
+    val deviceAddress: String,
     val deviceType: String,
-    val description: String,
     val deviceTypeByColor: DeviceColorType
 )
